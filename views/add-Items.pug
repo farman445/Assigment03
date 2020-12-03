@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+    h1 Add New Items
+    form(action="/itemsRoutes/add", method="post") 
+        .form-group 
+            label(for="name") Item Name
+            input(type="text", class="form-control" name="Name") 
+        .form-group 
+            label(for="shape") Shape
+            input(type="text", class="form-control" name="Shape") 
+        .form-group 
+            label(for="rout") Rout
+            input(type="text", class="form-control" name="Rout") 
+        .form-group 
+            label(for="price") Price
+            input(type="text", class="form-control" name="Price") 
+        
+        input(type="submit", class="btn btn-success") 
